@@ -6,24 +6,24 @@ This project is part of the Udacity Azure ML Nanodegree. In this project, I used
 
 The main steps of the project are:
 
-1. [Authentication](#authentication)
-2. [Automated ML Experiment](#automated-ml-experiment)
-3. [Deploy the best model](#deploy-the-best-model)
-4. [Enable logging](#enable-logging)
-5. [Swagger Documentation](#swagger-documentation)
+1. [Authentication](#step-1-authentication)
+2. [Automated ML Experiment](#step-2-automated-ml-experiment)
+3. [Deploy the best model](#step-3-deploy-the-best-model)
+4. [Enable logging](#step-4-enable-logging)
+5. [Swagger Documentation](#step-5-swagger-documentation)
 6. [Consume model endpoints](#step-6-consume-model-endpoints)
-7. [Create and publish a pipeline](#create-and-publish-a-pipeline)
+7. [Create and publish a pipeline](#step-7-create-and-publish-a-pipeline)
 
 ![Steps](/img/0-Steps.png)
 
 
 ## Key Steps
 
-#### Authentication
+### Step 1 Authentication
 
 Since I used the Udacity lab environment, this step was not necessary.
 
-#### Automated ML Experiment
+### Step 2 Automated ML Experiment
 
 In this step, we run an AutoML experiment to find the best model.
 
@@ -44,7 +44,7 @@ We can see that the best model is a Voting Ensemble with an AUC of 0.94773, whic
 
 ![BestMpdel](/img/2.3-BestModel.png)
 
-#### Deploy the best model
+### Step 3 Deploy the best model
 
 The best model can then be deployed using an Azure Container Instance.
 
@@ -54,7 +54,7 @@ Deploying the best model allows us to interact with the HTTP API service and to 
 
 ![DeploymentSuccess](/img/3.2-DeploymentSuccess.png)
 
-#### Enable logging
+### Step 4 Enable logging
 
 In this step, we enable Applications Insights and retrieve logs.
 
@@ -64,7 +64,7 @@ In this step, we enable Applications Insights and retrieve logs.
 
 ![AppInsights](/img/4.3-AppInsights.png)
 
-#### Swagger Documentation
+### Step 5 Swagger Documentation
 
 In this step, we consumed the consume the deployed model using Swagger.
 
@@ -88,7 +88,7 @@ We modify the endpoint.py script to match the scoring_uri and key of the deploye
 
 The script contains test data and the endpoint returns the prediction and a data.json file.
 
-#### Create and publish a pipeline
+### Step 7 Create and publish a pipeline
 
 In this step, we create, publish, and consume a pipeline using a Jupyter Notebook.
 
