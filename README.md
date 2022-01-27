@@ -105,6 +105,6 @@ The screencast of this project can be found [here](https://drive.google.com/file
 
 ## Future Work
 
-Perform an exploratory data analysis of the dataset.
-Perform feature engineering on the dataset.
-Export the model to support [ONNX](https://docs.microsoft.com/en-us/azure/machine-learning/concept-onnx).
+* Perform an exploratory data analysis of the dataset.
+* Perform feature engineering on the dataset.
+* Export the model to support [ONNX](https://docs.microsoft.com/en-us/azure/machine-learning/concept-onnx).
