@@ -19,11 +19,11 @@ The main steps of the project are:
 
 ## Key Steps
 
-### 1. [Authentication]
+#### Authentication
 
 Since I used the Udacity lab environment, this step was not necessary.
 
-2. [Automated ML Experiment](#automated-ml-experiment)
+#### Automated ML Experiment
 
 In this step, we run an AutoML experiment to find the best model.
 
@@ -44,7 +44,7 @@ We can see that the best model is a Voting Ensemble with an AUC of 0.94773, whic
 
 ![BestMpdel](/img/2.3-BestModel.png)
 
-3. [Deploy the best model](#deploy-the-best-model)
+#### Deploy the best model
 
 The best model can then be deployed using an Azure Container Instance.
 
@@ -54,7 +54,7 @@ Deploying the best model allows us to interact with the HTTP API service and to 
 
 ![DeploymentSuccess](/img/3.2-DeploymentSuccess.png)
 
-4. [Enable logging](#enable-logging)
+#### Enable logging
 
 In this step, we enable Applications Insights and retrieve logs.
 
@@ -64,8 +64,7 @@ In this step, we enable Applications Insights and retrieve logs.
 
 ![AppInsights](/img/4.3-AppInsights.png)
 
-
-5. [Swagger Documentation](#swagger-documentation)
+#### Swagger Documentation
 
 In this step, we consumed the consume the deployed model using Swagger.
 
@@ -79,7 +78,7 @@ Then, we can access the Swagger documentation in the specified port of our compu
 ![SwaggerDoc1](/img/5.3-SwaggerDoc1.png)
 ![SwaggerDoc2](/img/5.4-SwaggerDoc2.png)
 
-#### [Consume model endpoints](#operationalizing-machine-learning)
+#### Consume model endpoints
 
 In this step, we interact with the trained model.
 
@@ -89,7 +88,7 @@ We modify the endpoint.py script to match the scoring_uri and key of the deploye
 
 The script contains test data and the endpoint returns the prediction and a data.json file.
 
-7. [Create and publish a pipeline](#create-and-publish-a-pipeline)
+#### Create and publish a pipeline
 
 In this step, we create, publish, and consume a pipeline using a Jupyter Notebook.
 
