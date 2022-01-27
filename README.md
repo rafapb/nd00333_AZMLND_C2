@@ -11,7 +11,7 @@ The main steps of the project are:
 3. [Deploy the best model](#deploy-the-best-model)
 4. [Enable logging](#enable-logging)
 5. [Swagger Documentation](#swagger-documentation)
-6. [Consume model endpoints](#consume-model-endpoints)
+6. [Consume model endpoints](#Step 6-consume-model-endpoints)
 7. [Create and publish a pipeline](#create-and-publish-a-pipeline)
 
 ![Steps](/img/0-Steps.png)
@@ -78,7 +78,7 @@ Then, we can access the Swagger documentation in the specified port of our compu
 ![SwaggerDoc1](/img/5.3-SwaggerDoc1.png)
 ![SwaggerDoc2](/img/5.4-SwaggerDoc2.png)
 
-#### Consume model endpoints
+### Step 6 Consume model endpoints
 
 In this step, we interact with the trained model.
 
