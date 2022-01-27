@@ -36,7 +36,7 @@ The dataset used can be downloaded [here](https://automlsamplenotebookdata.blob.
 
 A detailed description of the data features can be found [here](https://archive.ics.uci.edu/ml/datasets/bank+marketing#).
 
-Then, the AutoML experiment is ran on a compute cluster.
+Then, the AutoML experiment is run on a compute cluster.
 
 ![AutoML](/img/2.2-AutoML.png)
 
