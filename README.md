@@ -19,7 +19,7 @@ The main steps of the project are:
 
 ## Key Steps
 
-1. [Authentication](#authentication)
+### 1. [Authentication]
 
 Since I used the Udacity lab environment, this step was not necessary.
 
@@ -79,7 +79,7 @@ Then, we can access the Swagger documentation in the specified port of our compu
 ![SwaggerDoc1](/img/5.3-SwaggerDoc1.png)
 ![SwaggerDoc2](/img/5.4-SwaggerDoc2.png)
 
-# Consume model endpoints
+# [Consume model endpoints](#operationalizing-machine-learning)
 
 In this step, we interact with the trained model.
 
