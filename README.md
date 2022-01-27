@@ -10,7 +10,7 @@ The main steps of the project are:
 2. [Automated ML Experiment](#step-2-automated-ml-experiment)
 3. [Deploy the best model](#step-3-deploy-the-best-model)
 4. [Enable logging](#step-4-enable-logging)
-5. [Swagger Documentation](#step-5-swagger-documentation)
+5. [Swagger documentation](#step-5-swagger-documentation)
 6. [Consume model endpoints](#step-6-consume-model-endpoints)
 7. [Create and publish a pipeline](#step-7-create-and-publish-a-pipeline)
 
@@ -64,7 +64,7 @@ In this step, we enable Applications Insights and retrieve logs.
 
 ![AppInsights](/img/4.3-AppInsights.png)
 
-### Step 5 Swagger Documentation
+### Step 5 Swagger documentation
 
 In this step, we consumed the consume the deployed model using Swagger.
 
