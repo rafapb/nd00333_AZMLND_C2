@@ -107,3 +107,4 @@ The screencast of this project can be found [here](https://drive.google.com/file
 * Perform an exploratory data analysis of the dataset.
 * Perform feature engineering on the dataset.
 * Export the model to support [ONNX](https://docs.microsoft.com/en-us/azure/machine-learning/concept-onnx).
+* Retrain the model periodically with more recent data and [monitor data drift](https://docs.microsoft.com/en-us/azure/machine-learning/how-to-monitor-datasets?tabs=python).
