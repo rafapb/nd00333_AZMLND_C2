@@ -11,7 +11,7 @@ The main steps of the project are:
 3. [Deploy the best model](#deploy-the-best-model)
 4. [Enable logging](#enable-logging)
 5. [Swagger Documentation](#swagger-documentation)
-6. [Consume model endpoints](#Step 6-consume-model-endpoints)
+6. [Consume model endpoints](#step-6-consume-model-endpoints)
 7. [Create and publish a pipeline](#create-and-publish-a-pipeline)
 
 ![Steps](/img/0-Steps.png)
