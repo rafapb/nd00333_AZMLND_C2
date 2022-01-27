@@ -14,7 +14,7 @@ The main steps of the project are:
 6. [Consume model endpoints](#consume-model-endpoints)
 7. [Create and publish a pipeline](#create-and-publish-a-pipeline)
 
-![Steps](/img/0-steps.png)
+![Steps](/img/0-Steps.png)
 
 
 ## Key Steps
@@ -77,7 +77,7 @@ After downloading the swagger.json file from Azure, we run swagger.sh and serve.
 Then, we can access the Swagger documentation in the specified port of our computer.
 
 ![SwaggerDoc1](/img/5.3-SwaggerDoc1.png)
-![SwaggerDoc2](/img/5.3-SwaggerDoc2.png)
+![SwaggerDoc2](/img/5.4-SwaggerDoc2.png)
 
 6. [Consume model endpoints](#consume-model-endpoints)
 
