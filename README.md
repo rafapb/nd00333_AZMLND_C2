@@ -98,8 +98,8 @@ The script contains test data and the endpoint returns the prediction and a data
 
 The Test section of the endpoint also allows us to test our endpoint and see the returned values.
 
-![Endpoint4](/img/6.3-Endpoint4.png)
-![Endpoint5](/img/6.4-Endpoint5.png)
+![Endpoint4](/img/6.4-Endpoint4.png)
+![Endpoint5](/img/6.5-Endpoint5.png)
 
 ### Step 7 Create and publish a pipeline
 
@@ -109,8 +109,8 @@ In this step, we create, publish, and consume a pipeline using a Jupyter Noteboo
 ![PublishPipeline2](/img/7.2-PublishPipeline2.png)
 ![PublishPipeline3](/img/7.3-PublishPipeline3.png)
 ![PublishPipeline4](/img/7.4-PublishPipeline4.png)
-![PublishPipeline5](/img/7.4-PublishPipeline5.png)
-![PublishPipeline6](/img/7.4-PublishPipeline6.png)
+![PublishPipeline5](/img/7.5-PublishPipeline5.png)
+![PublishPipeline6](/img/7.6-PublishPipeline6.png)
 
 ## Screen Recording
 
