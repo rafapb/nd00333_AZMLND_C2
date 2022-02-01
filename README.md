@@ -16,7 +16,6 @@ The main steps of the project are:
 
 ![Steps](/img/0-Steps.png)
 
-
 ## Key Steps
 
 ### Step 1 Authentication
@@ -25,7 +24,7 @@ Since I used the Udacity lab environment, this step was not necessary.
 
 ### Step 2 Automated ML Experiment
 
-In this step, we run an AutoML experiment to find the best model.
+In this step, we run an AutoML experiment to find the best model. Azure [AutoML](https://docs.microsoft.com/en-us/azure/machine-learning/concept-automated-ml) is a service that runs experiments to find the best model in a very efficient way.
 
 First, the dataset needs to be uploaded.
 
@@ -46,9 +45,9 @@ We can see that the best model is a Voting Ensemble with an AUC of 0.94773, whic
 
 ### Step 3 Deploy the best model
 
-The best model can then be deployed using an Azure Container Instance.
+The, we deploy the best model using [Azure Container Instances](https://docs.microsoft.com/en-us/azure/container-instances/container-instances-overview). By using the Azure Container Instance, we can pack all the dependencies and deploy the model, ensuring that it will work on any machine.
 
-Deploying the best model allows us to interact with the HTTP API service and to interact with the model by sending data over POST requests.
+Deploying the model delivers it into production. It allows us to interact with the model via an HTTP endpoint by sending data over POST requests.
 
 ![Deployment](/img/3.1-Deployment.png)
 
@@ -56,19 +55,25 @@ Deploying the best model allows us to interact with the HTTP API service and to 
 
 ### Step 4 Enable logging
 
-In this step, we enable Applications Insights and retrieve logs.
+In this step, we enable Applications Insights to retrieve logs. 
+
+We deployed the model in production but we did not enable logging since we wanted to do so after deployment using Python SDK.
+
+We [enable app insights](https://docs.microsoft.com/en-us/azure/machine-learning/how-to-enable-app-insights) by running the code in the logs.py file. Enabling apps insights allows us to collect data from the endpoint (output data, responses, requests rates, response times, failure rates, depenency rates, reponse times, failure rates, and exceptions).
 
 ![Logs](/img/4.1-Logs.png)
 
-![EnabledAppInsights](/img/4.2-EnabledAppInsights.png)
+![Logs2](/img/4.2-Logs2.png)
 
-![AppInsights](/img/4.3-AppInsights.png)
+![EnabledAppInsights](/img/4.3-EnabledAppInsights.png)
+
+![AppInsights](/img/4.4-AppInsights.png)
 
 ### Step 5 Swagger Documentation
 
-In this step, we consumed the consume the deployed model using Swagger.
+In this step, we consumed the consume the deployed model using [Swagger](https://swagger.io/). The Swagger documentation describes the REST API using JSON.
 
-After downloading the swagger.json file from Azure, we run swagger.sh and serve.py to generate the swagger documentation.
+After downloading the swagger.json file from Azure, we ran swagger.sh and serve.py to generate the swagger documentation.
 
 ![Swagger](/img/5.1-Swagger.png)
 ![Serve](/img/5.2-Serve.png)
@@ -80,7 +85,7 @@ Then, we can access the Swagger documentation in the specified port of our compu
 
 ### Step 6 Consume model endpoints
 
-In this step, we interact with the trained model.
+In this step, we interact with the trained model via an [endpoint](https://docs.microsoft.com/en-us/azure/machine-learning/concept-endpoints). An endpoint allows us to send data and receive the prediction output of the deployed model.
 
 We modify the endpoint.py script to match the scoring_uri and key of the deployed model.
 
@@ -88,19 +93,28 @@ We modify the endpoint.py script to match the scoring_uri and key of the deploye
 
 The script contains test data and the endpoint returns the prediction and a data.json file.
 
+![Endpoint2](/img/6.2-Endpoint2.png)
+![Endpoint3](/img/6.3-Endpoint3.png)
+
+The Test section of the endpoint also allows us to test our endpoint and see the returned values.
+
+![Endpoint4](/img/6.3-Endpoint4.png)
+![Endpoint5](/img/6.4-Endpoint5.png)
+
 ### Step 7 Create and publish a pipeline
 
-In this step, we create, publish, and consume a pipeline using a Jupyter Notebook.
+In this step, we create, publish, and consume a pipeline using a Jupyter Notebook. The Jupyer Notebook was provided by Udacity and the code was updated to match the environment we were working in. Also, the config.json file was uploaded in the same working directory as the notebook.
 
 ![PublishPipeline1](/img/7.1-PublishPipeline1.png)
 ![PublishPipeline2](/img/7.2-PublishPipeline2.png)
 ![PublishPipeline3](/img/7.3-PublishPipeline3.png)
 ![PublishPipeline4](/img/7.4-PublishPipeline4.png)
-
+![PublishPipeline5](/img/7.4-PublishPipeline5.png)
+![PublishPipeline6](/img/7.4-PublishPipeline6.png)
 
 ## Screen Recording
 
-The screencast of this project can be found [here](https://drive.google.com/file/d/12YTh9X4dAiOMzdL5zE4RwyQP5XfGk2LW/view?usp=sharing).
+The screencast of this project can be found [here](https://drive.google.com/file/d/1GwUTYVcTUuWFUOn4WuH_HbF-_FMkAjXG/view?usp=sharing).
 
 ## Future Work
 
