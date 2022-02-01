@@ -10,7 +10,7 @@ The main steps of the project are:
 2. [Automated ML Experiment](#step-2-automated-ml-experiment)
 3. [Deploy the best model](#step-3-deploy-the-best-model)
 4. [Enable logging](#step-4-enable-logging)
-5. [Swagger Documentation](#step-5-swagger-documentation)
+5. [Swagger documentation](#step-5-swagger-documentation)
 6. [Consume model endpoints](#step-6-consume-model-endpoints)
 7. [Create and publish a pipeline](#step-7-create-and-publish-a-pipeline)
 
@@ -35,7 +35,7 @@ The dataset used can be downloaded [here](https://automlsamplenotebookdata.blob.
 
 A detailed description of the data features can be found [here](https://archive.ics.uci.edu/ml/datasets/bank+marketing#).
 
-Then, the AutoML experiment is ran on a compute cluster.
+Then, the AutoML experiment is run on a compute cluster.
 
 ![AutoML](/img/2.2-AutoML.png)
 
@@ -69,7 +69,7 @@ We [enable app insights](https://docs.microsoft.com/en-us/azure/machine-learning
 
 ![AppInsights](/img/4.4-AppInsights.png)
 
-### Step 5 Swagger Documentation
+### Step 5 Swagger documentation
 
 In this step, we consumed the consume the deployed model using [Swagger](https://swagger.io/). The Swagger documentation describes the REST API using JSON.
 
@@ -121,3 +121,4 @@ The screencast of this project can be found [here](https://drive.google.com/file
 * Perform an exploratory data analysis of the dataset.
 * Perform feature engineering on the dataset.
 * Export the model to support [ONNX](https://docs.microsoft.com/en-us/azure/machine-learning/concept-onnx).
+* Retrain the model periodically with more recent data and [monitor data drift](https://docs.microsoft.com/en-us/azure/machine-learning/how-to-monitor-datasets?tabs=python).
